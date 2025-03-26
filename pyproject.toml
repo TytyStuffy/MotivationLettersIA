@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "motivation-letter-generator"
+version = "0.1.0"
+description = "Système d'accompagnement pour la rédaction de lettres de motivation personnalisées utilisant CrewAI"
+authors = ["Thymoa"]
+readme = "README.md"
+packages = [{include = "motivation_letter_generator"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+crewai = "*"
+langchain = "*"
+langchain-community = "*"
+python-decouple = "*"
+beautifulsoup4 = "*"
+requests = "*"
+selenium = "*"
+duckduckgo-search = "*"
+fastapi = "*"
+uvicorn = "*"
+google-generativeai = "*"
+langchain-google-genai = "*"
+# Added pydantic explicitly
+pydantic = "*"
+# Added the scraping tools
+scrapy = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 88

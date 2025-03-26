@@ -1,0 +1,18 @@
+# CrewAI and LangChain dependencies
+crewai>=0.1.0
+langchain>=0.0.335
+langchain_openai>=0.0.2
+python-decouple>=3.8
+
+# Web scraping tools
+scrapy==2.5.0
+beautifulsoup4==4.9.3
+requests==2.25.1
+selenium==3.141.0
+
+# Search tools
+duckduckgo-search>=1.5.0
+
+# For web interface (if needed later)
+fastapi==0.68.0
+uvicorn>=0.15.0
